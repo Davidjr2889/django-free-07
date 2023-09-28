@@ -1,0 +1,30 @@
+.DS_Store
+.flow
+.dir-locals.el
+.ropeproject
+.vscode
+.vim
+.env.development.local
+
+.log/
+*.log
+*.dump
+
+# Cache files
+__pycache__/
+
+# Project files
+LBARM/.env
+dump.rdb
+jwt_auth
+
+# dascat_utils
+site_media/
+static/
+backoffice-vue/node_modules
+docs/
+
+env/
+
+node_modules/
+

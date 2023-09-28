@@ -1,0 +1,35 @@
+version: "1"
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_PASSWORD: ${DEFAULT_DATABASE_PASS}
+      POSTGRES_USER: ${DEFAULT_DATABASE_USER}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "${DEFAULT_DATABASE_PORT}:5432"
+
+  adminer:
+    image: adminer
+    restart: always
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+    ports:
+      - 5433:8080
+    depends_on:
+      - postgres
+
+  redis:
+    image: redis/redis-stack
+    ports:
+      - 6379:6379
+      - 6380:8001
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

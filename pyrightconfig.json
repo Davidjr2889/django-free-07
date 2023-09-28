@@ -1,0 +1,9 @@
+{
+  "venvPath": "/Users/pbeck/Development/projects/dascat/py_virtualenvs/",
+  "venv": "lbarm_vv",
+  "executionEnvironments": [
+    {
+      "root": "."
+    }
+  ]
+}

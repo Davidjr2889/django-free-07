@@ -1,0 +1,6 @@
+{
+	"dependencies": {
+		"@progress/kendo-vue-excel-export": "^3.12.0",
+		"@progress/kendo-vue-grid": "^3.12.0"
+	}
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "model": "backoffice.lbarmtipouser",
+        "pk": 0,
+        "fields": {
+            "tipo_utilizador": "Admin"
+        }
+    },
+    {
+        "model": "backoffice.lbarmtipouser",
+        "pk": 1,
+        "fields": {
+            "tipo_utilizador": "Armaz\u00e9m"
+        }
+    },
+    {
+        "model": "backoffice.lbarmtipouser",
+        "pk": 2,
+        "fields": {
+            "tipo_utilizador": "Marketing"
+        }
+    },
+    {
+        "model": "backoffice.lbarmtipouser",
+        "pk": 3,
+        "fields": {
+            "tipo_utilizador": "E-Commerce"
+        }
+    }
+]
